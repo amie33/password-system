@@ -1,0 +1,134 @@
+/*CSS stylesheet for my insecure website*/
+#pagewrap{
+	width: 800px;
+    margin: 0 auto;
+}
+body{
+	background-image: url("../img/space2.jpg");
+	background-repeat: no-repeat;
+	background-size: 175%;
+	padding: 100px;
+}
+
+.wrapper{
+	position: fixed;
+    top: 19%;
+    left: 38%;
+    margin-top: -50px;
+    margin-left: -100px;
+    text-align: center;
+    background: grey;
+    border: 2px dashed rgb(143, 188, 143, .5);
+    background-color: rgb(143, 188, 143, .5);
+    padding: 30px;
+	
+}
+
+input[type=text], input[type=password]{
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 118px;
+	display: block;
+	border: 1px solid orangered;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background: olivedrab; 
+	color: white;
+	font-family: 'Share Tech Mono', monospace;
+}
+::placeholder{
+	color: white;
+	font-family: 'Share Tech Mono', monospace;
+
+}
+input[type=submit], input[type=reset] {
+	width: 50%;
+	background: white;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 118px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	font-family: 'Share Tech Mono', monospace;
+	font-weight: bold;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background-color: darkorange;
+}
+
+.heading, .heading2{
+	font-family: 'VT323', monospace;
+}
+.heading{
+	font-size: 50px;
+}
+
+.success{
+	font-family: 'Share Tech Mono', monospace;
+	text-decoration: none; 
+	width:50%; 
+	font-size: 75px;
+    margin:0 10px;/*top right bottom left*/
+    text-align:center;
+	color: white;
+}
+.fail{
+	font-family: 'Share Tech Mono', monospace;
+	text-decoration: none; 
+	width:50%; 
+	font-size: 75px;
+    margin:0 240px;/*top right bottom left*/
+    text-align:center;
+	color: white;
+}
+.print{
+	font-size: 30px; 
+	color: white;
+	margin: 30px 0 -10px 0;
+	font-family: 'Share Tech Mono', monospace;
+
+}
+.print2{
+	font-size: 30px; 
+	color: white;
+	margin: 0 0 0 0;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+/*animation for my pictures*/ 
+.wrong{
+	margin:0 257px;/*top right bottom left*/
+	right: -388px;
+	padding-top: 50px;
+	animation-name: float;
+    animation-duration: 10s;
+}
+.right{
+	margin:0 245px;/*top right bottom left*/
+	right: -388px;
+	padding-top: 50px;
+	animation-name: float;
+    animation-duration: 10s;
+}
+@keyframes float {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.controls{
+	position: fixed;
+    margin-top: -50px;
+    margin-left: -100px;
+    text-align: center;
+    padding: 30px;
+}
+audio:focus{
+	outline: none !important;
+}
+
+
+
+
